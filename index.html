@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitty Invaders</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <script src="script.js"></script>
+  <style>
+    body {
+      padding: 0px;
+      margin: 0px;
+      overflow: hidden;
+      background: url("mainmenufr.gif") no-repeat center center fixed;
+      background-size: cover;
+    }
+    .play {
+      font-size: 24px;
+      font-weight: 600;
+      text-align: center;
+      width: 280px;
+      opacity: 0.7;
+      text-decoration: none;
+      padding: 4px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #fff;
+      height: 24px;
+      line-height: 24px;
+      background: black;
+      position: fixed;
+      bottom: 350px;
+      left: 610px;
+      z-index: 1;
+      transition: .2s;
+      scale: 1.1;
+      margin: auto;
+      font-family: 'Gloria Hallelujah', cursive;
+    }
+
+    .play:hover {
+      opacity: 1.03;
+      scale: 1.2;
+      color: #ffffff;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"
+    integrity="sha512-uaz5GpnQoE6t5echKlX8P52czvsIGgLPcvlzfvRubLZ1Hp8JemUDnbUiAahbVtPb+jUVrNETuXvAhDDF/N3M4w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const audio = new Audio('mainmenu.mp3');
+    audio.loop = true;
+    audio.play();
+  });
+  </script>
+ <style>
+      .title {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+  </style>
+  <img class="title" src="title.gif">
+  </head>
+
+  <body>
+    <a href="game.html" class="play">Play</a>
+  </body>
+
+</html>
